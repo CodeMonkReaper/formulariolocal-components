@@ -5,6 +5,15 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-input class="inputbarbie" type="text" placeholder="Awesome Input" [(ngModel)]="nombre" ></ion-input>
+  <ion-input type="text" placeholder="Awesome Input" [(ngModel)]="apellido" ></ion-input>
+  <form 
+  (ngSubmit)="enviar()" #form="ngForm">
+  <ion-input type="text" placeholder="Awesome Input"></ion-input>
+  <ion-input type="password" placeholder="Awesome Input"></ion-input>
+  </form>
+  <ion-input type="text" placeholder="Awesome Input"></ion-input>
+  <ion-input type="password" placeholder="Awesome Input"></ion-input>
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">pag1</ion-title>
