@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>clase4_sum_rest</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ng-container *ngIf="negativo"> </ng-container>
+  <ion-label>{{[n]}}</ion-label>
+  <ion-button class="suma" (click)="sumar()"  [disabled]="n===10" expand="block" fill="clear" shape="round">
+    sumar
+  </ion-button>
+  <ion-label >{{[n]}}</ion-label>
+  <ion-button ngClass="negativo" (click)="restar()"  [disabled]="n===0" expand="block" fill="clear" shape="round">
+    restar
+  </ion-button>
+  
+  <ng-template #negativo >    </ng-template>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">clase4_sum_rest</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>

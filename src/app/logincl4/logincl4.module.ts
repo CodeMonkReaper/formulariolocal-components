@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Pag1PageRoutingModule } from './pag1-routing.module';
+import { Logincl4PageRoutingModule } from './logincl4-routing.module';
 
-import { Pag1Page } from './pag1.page';
+import { Logincl4Page } from './logincl4.page';
 import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
@@ -14,9 +14,10 @@ import { ComponentsModule } from '../components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    Pag1PageRoutingModule,
+    Logincl4PageRoutingModule,
+    ReactiveFormsModule,
     ComponentsModule
   ],
-  declarations: [Pag1Page]
+  declarations: [Logincl4Page]
 })
-export class Pag1PageModule {}
+export class Logincl4PageModule {}

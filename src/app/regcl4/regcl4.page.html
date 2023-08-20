@@ -1,0 +1,29 @@
+<app-header titulo="registro" ></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">regcl4</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>debe registrarse</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form  [formGroup]="formularioregistro"  (keyup.enter)="guardar()" >
+        <ion-item>
+          <ion-input aria-label="Nombre" formControlName="nombre" type="text" placeholder="NOMBRE"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input aria-label="bluelabel" formControlName="password" type="password" placeholder="CONTRASEÑA"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input aria-label="Confirmar contraseña" formControlName="confirmpassword" type="password" placeholder="CONFIRMAR CONTRASEÑA"></ion-input>
+        </ion-item>
+        <br>
+        <ion-button (click)="guardar()" >Registrar</ion-button>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

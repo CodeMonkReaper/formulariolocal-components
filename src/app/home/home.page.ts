@@ -15,6 +15,7 @@ items = [
   {id:3,marca:'nissan', colores:'medium'},
   {id:4,marca:'audi', colores:'danger'}
 ]
+home: string|undefined;
 
 trackItems(index: number, itemObject: any) {
   return itemObject.id;
@@ -25,5 +26,14 @@ trackItems(index: number, itemObject: any) {
   constructor(private router:Router) {}
   gotopag1(){
     this.router.navigate(['pag1'])
+  }
+  gotopag2(){
+    this.router.navigate(['clase4-sum-rest'])
+  }
+  gotologin(){
+    this.router.navigate(['logincl4'])
+  }
+  gotoreg(){
+    this.router.navigate(['regcl4'])
   }
 }

@@ -1,0 +1,35 @@
+<app-header titulo="login" ></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">logincl4</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>LOGIN</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form action="" [formGroup]="formulariologin" >
+        <ion-item>
+          <ion-input aria-label="Nombre" formControlName="nombre" type="text" placeholder="NOMBRE"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input  aria-label="Contraseña" formControlName="password" type="password" placeholder="  Contraseña"></ion-input>
+        </ion-item>
+      </form> 
+      <br>
+      <ion-button (click)="enviar()"  fill="clear" shape="round">
+        ENVIAR
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="primary" >
+    <ion-button color="danger" slot="end" [routerLink]="['/regcl4']" > Registrarse
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
